@@ -1,0 +1,144 @@
+.loginBody {
+  width: 100vw;
+  height: 100vh;
+  background-color: #e5e5e5;
+}
+
+.loginContainer {
+  position: absolute;
+  width: 500px;
+  height: 545px;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 107px;
+  /* overflow: hidden; */
+
+  background: #ffffff;
+  /* light-shadow */
+
+  box-shadow: 0px 4px 32px rgba(60, 69, 76, 0.12);
+  border-radius: 4px;
+}
+
+.loginTitle {
+  position: absolute;
+  width: 370px;
+  height: 24px;
+  left: 32px;
+  top: calc(189px - 160px);
+
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 0.02em;
+
+  color: #000000;
+}
+
+.loginTitle span {
+  color: #1db954;
+}
+
+.label1 {
+  position: absolute;
+  width: 48px;
+  height: 20px;
+  left: 32px;
+  top: calc(245px - 160px);
+
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  /* identical to box height */
+
+  letter-spacing: 0.02em;
+
+  color: #000000;
+
+  opacity: 0.4;
+}
+
+.email {
+  position: absolute;
+  width: 436px;
+  height: 48px;
+  left: 32px;
+  top: calc(273px - 160px);
+
+  background: #ffffff;
+  border: 2px solid #e9ebeb;
+  box-sizing: border-box;
+  border-radius: 4px;
+  padding: 10px;
+  font-size: 1.1em;
+}
+
+.label2 {
+  position: absolute;
+  width: 82px;
+  height: 20px;
+  left: 32px;
+  top: calc(361px - 160px);
+
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  /* identical to box height */
+
+  letter-spacing: 0.02em;
+
+  color: #000000;
+
+  opacity: 0.4;
+}
+
+.password {
+  position: absolute;
+  width: 436px;
+  height: 48px;
+  left: 32px;
+  top: calc(389px - 160px);
+  padding: 10px;
+  font-size: 1.1em;
+
+  background: #ffffff;
+  border: 2px solid #e9ebeb;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+
+.loginButton {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 24px;
+
+  position: absolute;
+  width: 160px;
+  height: 52px;
+  left: 170px;
+  top: calc(603px - 160px);
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  font-size: 1em;
+  letter-spacing: 1px;
+  cursor: pointer;
+
+  background: #1db954;
+  /* light-shadow */
+  border: none;
+  box-shadow: 0px 4px 32px rgba(60, 69, 76, 0.12);
+  border-radius: 30px;
+}
+
+.loginButton:hover {
+  background-color: #1db954;
+  opacity: 0.8;
+}

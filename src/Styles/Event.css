@@ -1,0 +1,98 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap");
+
+.eventContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 782px;
+  min-height: 60px;
+  /* border: 1px solid black; */
+  box-sizing: border-box;
+  margin-bottom: 20px;
+}
+
+.date {
+  display: flex;
+  flex-direction: column;
+}
+
+.nameAndLocation {
+  display: flex;
+  flex-direction: column;
+}
+
+.artistPhoto {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: 1px solid black;
+}
+
+.month {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  /* identical to box height */
+
+  /* text-align: center; */
+  letter-spacing: 0.02em;
+
+  /* Blue 2 */
+
+  color: #2d9cdb;
+}
+
+.day_time {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  padding-top: 7px;
+  /* identical to box height */
+
+  text-align: center;
+  justify-self: flex-end;
+  letter-spacing: 0.02em;
+
+  color: #243037;
+
+  opacity: 0.6;
+}
+
+.name {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  /* identical to box height */
+
+  /* text-align: center; */
+  letter-spacing: 0.02em;
+
+  /* txt-color */
+
+  color: #243037;
+}
+
+.location {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  /* identical to box height */
+
+  text-align: center;
+  letter-spacing: 0.02em;
+
+  /* txt-color */
+  padding-top: 7px;
+
+  color: #243037;
+
+  opacity: 0.6;
+}
