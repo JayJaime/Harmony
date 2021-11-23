@@ -1,0 +1,178 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap");
+
+.content {
+  position: absolute;
+  width: 100%;
+  height: 725px;
+  left: 0px;
+  top: 0px;
+}
+
+.container {
+  height: 100vh;
+  width: 100vw;
+
+  /* background: linear-gradient(180deg, rgba(0, 0, 0, 0.4) 0%, #000000 100%); */
+}
+
+.imageContainer {
+  box-sizing: border-box;
+  background-image: url("../images/Landing_Hero_Image_Edited.jpg");
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+}
+
+.container .zipH2 {
+  position: absolute;
+  width: 590px;
+  height: 73px;
+  left: 775px;
+  top: 148px;
+
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 60px;
+  line-height: 73px;
+  text-align: center;
+  letter-spacing: 0.01em;
+
+  color: #ffffff;
+}
+
+.container .zipP {
+  position: absolute;
+  width: 590px;
+  height: 60px;
+  left: 765px;
+  top: 237px;
+
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 30px;
+  /* or 167% */
+
+  text-align: center;
+  letter-spacing: 0.02em;
+
+  color: #ffffff;
+
+  opacity: 0.7;
+}
+
+.container button {
+  /* Auto Layout */
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 16px 24px;
+
+  position: absolute;
+  width: 241px;
+  height: 52px;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 418px;
+
+  border: 2px solid #1db954;
+  box-sizing: border-box;
+  background: none;
+  color: #1db954;
+  font-weight: bold;
+  font-size: 1em;
+  letter-spacing: 1px;
+  /* light-shadow */
+
+  filter: drop-shadow(0px 4px 32px rgba(60, 69, 76, 0.12));
+  border-radius: 30px;
+}
+
+.container button:hover {
+  background-color: #1db954;
+  color: #000000;
+  cursor: pointer;
+}
+
+.icon {
+  margin-left: 4px;
+}
+
+.zipInput {
+  display: flex;
+  flex-direction: row;
+
+  align-items: center;
+  padding: 16px 16px 16px 24px;
+
+  position: absolute;
+  width: 423px;
+  height: 84px;
+  left: 558px;
+  top: 345px;
+
+  /* white */
+
+  background: #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-sizing: border-box;
+  /* light-shadow */
+
+  box-shadow: 0px 4px 32px rgba(60, 69, 76, 0.12);
+  border-radius: 50px;
+}
+
+.searchZip {
+  color: #000000;
+  font-size: 20px;
+}
+
+.zipInpText {
+  font-family: "Montserrat";
+  letter-spacing: 1px;
+  border: none;
+  outline: none;
+  font-size: 18px;
+  transform: translateX(15px);
+}
+
+.zipInput button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 24px;
+
+  position: absolute;
+  width: 160px;
+  height: 52px;
+  right: 16px;
+  transform: translateX(-10px);
+
+  top: 14px;
+
+  color: white;
+  background: #1db954;
+  /* light-shadow */
+
+  box-shadow: 0px 4px 32px rgba(60, 69, 76, 0.12);
+  border-radius: 30px;
+
+  /* Inside Auto Layout */
+
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  margin: 0px 40px;
+}
+
+.zipInput button:hover {
+  background-color: #1db954;
+  opacity: 0.8;
+  color: white;
+}

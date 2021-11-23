@@ -3,8 +3,8 @@ import '../Styles/Login.css'
 import Header from '../Components/Header'
 import {useEffect, useState} from 'react'
 
-function Dashboard(){
-    window.open('Dashboard', '_self')
+function Zip(){
+    window.open('Zip', '_self')
 }
 
 document.body.classList.add('overflow-y')
@@ -28,7 +28,7 @@ export default function Login() {
                 <label className='label2'>Password</label>
                 <input type='password' className='password'></input>
 
-                <button onClick={Dashboard} className='loginButton'>Get started</button>
+                <button onClick={Zip} className='loginButton'>Get started</button>
             
         </div>
         </div>

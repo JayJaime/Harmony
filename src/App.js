@@ -9,7 +9,7 @@ import TicketPage from "./Pages/TicketPage";
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { fab} from '@fortawesome/free-brands-svg-icons'
 import { fas } from '@fortawesome/free-solid-svg-icons'
-import Footer from './Components/Footer'
+import Zip from './Pages/Zip'
 
 
 library.add(fab, fas)
@@ -23,6 +23,7 @@ function App() {
         <Route path = 'Dashboard' element = {<Dashboard/>}></Route>
         <Route path = 'Tickets' element = {<TicketPage/>}></Route>
         <Route path = 'Payments' element = {<PaymentPage/>}></Route>
+        <Route path = 'Zip' element = {<Zip/>}></Route>
       </Routes>
     </Router>
     {/* <Footer/> */}
