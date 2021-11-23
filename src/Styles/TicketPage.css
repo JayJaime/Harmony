@@ -1,0 +1,165 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap");
+
+.ticketPageContainer {
+  width: 100vh;
+  height: 100vw;
+}
+
+.map {
+  height: 100%;
+  width: 780px;
+  background-color: #f0f0f0;
+}
+
+.ticketContentContainer {
+  position: absolute;
+  width: 765px;
+  height: 100%;
+  left: 772px;
+  top: 0px;
+
+  background: #ffffff;
+  /* light grey */
+
+  /* border: 1px solid #dee0e2; */
+  box-sizing: border-box;
+}
+
+.artistTicketPage {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 24px;
+
+  position: absolute;
+  width: 765px;
+  height: 128px;
+  left: 0px;
+  top: 68px;
+
+  /* black */
+
+  background: #000000;
+}
+
+.tickArtistContent {
+  font-family: "Montserrat";
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+
+  position: static;
+  width: 363px;
+  height: 80px;
+  left: 24px;
+  top: 24px;
+
+  /* Inside Auto Layout */
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  margin: 10px 0px;
+}
+
+.tickArtistPhoto {
+  position: static;
+  width: 80px;
+  height: 80px;
+  left: 0px;
+  top: 0px;
+  transform: translateX(10px);
+
+  /* white */
+
+  border: 2px solid #ffffff;
+  box-sizing: border-box;
+  border-radius: 50px;
+
+  /* Inside Auto Layout */
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  margin: 0px 16px;
+}
+
+.tickArtistDateLocation {
+  /* Auto Layout */
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 0px;
+
+  position: static;
+  width: 267px;
+  height: 70px;
+  left: 96px;
+  top: 5px;
+
+  /* Inside Auto Layout */
+
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  margin: 0px 16px;
+}
+
+.tickDate {
+  /* Date_div */
+
+  /* Auto Layout */
+
+  display: flex;
+  flex-direction: row;
+
+  align-items: center;
+  padding: 0px;
+
+  position: static;
+  width: 246.99px;
+  height: 17px;
+  left: 0px;
+  top: 53px;
+  font-size: 14px;
+
+  /* Inside Auto Layout */
+
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  margin: 8px 0px;
+  color: #fefefe;
+}
+
+.tickLocation {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 0px;
+
+  position: static;
+  width: 267px;
+  height: 45px;
+  left: 0px;
+  top: 0px;
+
+  /* Inside Auto Layout */
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  margin: 8px 0px;
+  color: white;
+}
+
+.tickLocation p {
+  transform: translateY(8px);
+  font-size: 14px;
+}
