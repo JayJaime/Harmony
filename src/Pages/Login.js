@@ -1,14 +1,24 @@
 import React from 'react'
 import '../Styles/Login.css'
 import Header from '../Components/Header'
+import {useEffect, useState} from 'react'
 
 function Dashboard(){
     window.open('Dashboard', '_self')
 }
 
+document.body.classList.add('overflow-y')
+
 export default function Login() {
+    const [className, setClassName] = useState('')
+    
+    useEffect(() => {
+        setClassName('hidden')
+        return 
+    }, [])
+
     return (<div className="loginBody">
-        <Header/>
+        <Header class = {className}/>
         <div className='loginContainer'>
             <h2 className='loginTitle'> Sign in to your <span>Spotify</span> account.</h2>
             

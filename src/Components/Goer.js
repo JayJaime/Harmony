@@ -8,7 +8,7 @@ export default function Goer(props) {
                 
             </div>
             <div className='goerInfo'>
-                <h3 className='name'>{props.name}</h3>
+                <h3 className='nameGoer'>{props.nameGoer}</h3>
                 <p className='seeing'>{props.seeing}</p>
             </div>
         </div>

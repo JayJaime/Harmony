@@ -6,9 +6,10 @@
   align-items: center;
   width: 782px;
   min-height: 60px;
+
   /* border: 1px solid black; */
   box-sizing: border-box;
-  margin-bottom: 20px;
+  /* margin-bottom: 20px; */
 }
 
 .date {
@@ -38,6 +39,7 @@
 
   /* text-align: center; */
   letter-spacing: 0.02em;
+  transform: translateX(65px);
 
   /* Blue 2 */
 
@@ -57,6 +59,7 @@
   justify-self: flex-end;
   letter-spacing: 0.02em;
 
+  transform: translateX(65px);
   color: #243037;
 
   opacity: 0.6;
@@ -68,6 +71,7 @@
   font-weight: 600;
   font-size: 16px;
   line-height: 20px;
+  transform: translateX(135px);
   /* identical to box height */
 
   /* text-align: center; */
@@ -86,6 +90,8 @@
   line-height: 17px;
   /* identical to box height */
 
+  transform: translateX(135px);
+
   text-align: center;
   letter-spacing: 0.02em;
 
@@ -95,4 +101,21 @@
   color: #243037;
 
   opacity: 0.6;
+}
+
+.eventInfo {
+  /* height: 100px; */
+  width: 655px;
+  display: flex;
+  padding: 0 30px;
+
+  align-items: center;
+  min-height: 80px;
+  /* border: 1px solid black; */
+  box-sizing: border-box;
+}
+
+.eventInfo:hover {
+  background-color: #fafafa;
+  cursor: pointer;
 }

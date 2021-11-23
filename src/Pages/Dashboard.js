@@ -3,6 +3,9 @@ import '../Styles/Dashboard.css'
 import Header from '../Components/Header'
 import Event from '../Components/Event'
 import Goer from '../Components/Goer'
+import DashButton from '../Components/DashButton'
+
+import {useEffect, useState} from 'react'
 
 let zip = '00000';
 let concertCount = '0'
@@ -48,17 +51,36 @@ let placeHolderAPI2 = [
      seeing:'Seeing Kendrick Lamar'}
 ]
 
+
+
+
 export default function Dashboard() {
+    const [className, setClassName] = useState('')
+    
+    useEffect(() => {
+        document.body.classList.remove('overflow-y')
+        document.body.classList.add('overflow-x')
+        setClassName('searchAndFilter')
+        return 
+    }, [])
+    
     return (
         <div className='dashContainer'>
-            <Header/>
-            <div className='selectedArtist'></div>
+            <Header class = {className}/>
+            <div className='topArtist'>
+                <div className='topArtistContent'>
+                    <h3 className='date'>{placeholderAPI[0].date.weekDay + ' ' + placeholderAPI[0].date.month + ' ' + placeholderAPI[0].date.day}</h3>
+                    <h1 className='artistName'>{placeholderAPI[0].artist_name}</h1>
+                    <h3 className='locationTop'>{placeholderAPI[0].location.venue + ' - ' + placeholderAPI[0].location.city + ', ' + placeholderAPI[0].location.state}</h3>
+                    <DashButton id='topButton'/>
+                </div>
+            </div>
             <div className='concertContainer'>
                 <div className='concertCount'>
                     <h3>All Concert Events Near <span className='zip'>{zip}</span> {`(${concertCount})`}</h3>
                     <div className='dropdown'>
                         <label>Sort by: Date</label>
-                        <select>Sort by: Date</select>
+                        <select></select>
                     </div>
                 </div>
                 {placeholderAPI.map((event) => {
@@ -70,11 +92,12 @@ export default function Dashboard() {
                 <div className='goersContainer'>
                     <h3 className='title'>Concert goers near you</h3>
                     {placeHolderAPI2.map((event) => {
-                        return <Goer photo = {event.goer_photo} name = {event.name} seeing = {event.seeing}/>
+                        return <Goer photo = {event.goer_photo} nameGoer = {event.name} seeing = {event.seeing}/>
                     })}
                 </div>
                 
             </div>
+            
         </div>
     )
 }

@@ -3,11 +3,28 @@
   margin: 0;
   box-sizing: border-box;
 }
-
+/* 
 html,
 body,
 .App,
 #root {
   width: 100vw;
-  height: 1000px;
+  height: 1500px;
+  /* overflow-x: hidden; */
+/* } */
+
+.overflow-y {
+  overflow-y: hidden;
+}
+
+.overflow-x {
+  overflow-x: hidden;
+}
+
+.footer {
+  width: 100%;
+  height: 400px;
+  background-color: black;
+  position: absolute;
+  bottom: 0;
 }

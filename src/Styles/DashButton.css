@@ -18,7 +18,7 @@
   top: 830px; */
 
   /* Primary */
-  background-color: white;
+  background: none;
 
   border: 2px solid #1db954;
   box-sizing: border-box;
@@ -27,6 +27,16 @@
 
   filter: drop-shadow(0px 4px 32px rgba(60, 69, 76, 0.12));
   border-radius: 30px;
+}
+
+.DashButton button:hover {
+  background-color: #1db954;
+  color: black;
+}
+
+.DashButton .eventButton:hover {
+  background-color: #1db954;
+  color: rgb(255, 255, 255);
 }
 
 /* .DashButton {

@@ -1,10 +1,14 @@
 import React from 'react'
 import '../Styles/DashButton.css'
 
-export default function DashButton() {
+function ticketPage(){
+ window.open('tickets', '_self')
+}
+
+export default function DashButton(props) {
     return (
         <div className='DashButton'>
-            <button>See Tickets</button>
+            <button className={props.class} onClick = {ticketPage}>See Tickets</button>
         </div>
     )
 }
