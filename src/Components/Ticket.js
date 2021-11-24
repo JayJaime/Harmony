@@ -5,9 +5,9 @@ import DashButton from '../Components/DashButton'
 export default function Ticket(props) {
     return (
         <div className='ticket'>
-            <p></p>
-            <p></p>
-            <DashButton/>
+            <p className='ticketSeat'>Sec {props.section} {props.seat}, Row {props.row}</p>
+            <p className='ticketPrice'>{props.price}</p>
+            <DashButton class='eventButton'/>
         </div>
     )
 }

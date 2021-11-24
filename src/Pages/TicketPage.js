@@ -6,13 +6,34 @@ import Ticket from '../Components/Ticket'
 export default function TicketPage() {
     let ticketPlaceholder = [
         {seat:{section:'Terrace', seat:'20A', row:'9'},
-         price: '$125'
-    }
+         price: '$125.00'
+    },
+    {seat:{section:'Terrace', seat:'20A', row:'9'},
+    price: '$125.00'
+},
+{seat:{section:'Terrace', seat:'20A', row:'9'},
+price: '$125.00'
+},
+{seat:{section:'Terrace', seat:'20A', row:'9'},
+price: '$125.00'
+},
+{seat:{section:'Terrace', seat:'20A', row:'9'},
+price: '$125.00'
+},
+{seat:{section:'Terrace', seat:'20A', row:'9'},
+price: '$125.00'
+},
+{seat:{section:'Terrace', seat:'20A', row:'9'},
+price: '$125.00'
+},
+{seat:{section:'Terrace', seat:'20A', row:'9'},
+price: '$125.00'
+}
     ]
 
     return (
         <div className='ticketPageContainer'>
-            <Header/>
+            <Header id = 'hide'/>
             <div className='map'>
                 Stadium Map
             </div>
@@ -31,11 +52,20 @@ export default function TicketPage() {
                         <div className='tickArtistPhoto'></div>
                     </div>
                 </div>
-                <div className='ticketAmtContainer'></div>
-                <div className='ticketContainer'>
-                    {ticketPlaceholder.map((ticket) => {
-                        return <Ticket price = {ticket.price} section = {ticket.seat.section} row = {ticket.seat.row} seat = {ticket.seat.seat}/>
-                    })}
+                
+                <div className='ticketSelectionContainer'>
+                    <div className='ticketDropdown'>
+                        1 Ticket
+                    </div>
+                    <hr/>
+                    <div className='ticketContainer'>
+                       
+                            {ticketPlaceholder.map((ticket) => {
+                                return <Ticket price = {ticket.price} section = {ticket.seat.section} row = {ticket.seat.row} seat = {ticket.seat.seat}/>
+                            })}
+                            
+            
+                    </div>
                 </div>
             </div>
             

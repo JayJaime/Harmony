@@ -1,6 +1,7 @@
 import React from 'react'
 import '../Styles/Event.css'
 import DashButton from './DashButton'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 export default function Event(props) {
     let lineup = document.querySelector('.eventContainer')
@@ -16,6 +17,7 @@ export default function Event(props) {
         <div className='eventContainer'>
             
            <div  className='eventInfo'>
+           <FontAwesomeIcon className='dashDropdownArrow' icon={['fas', 'angle-down']}/>
                 <div className='artistPhoto'>
                     <img src = {props.artistPhoto} alt = ''></img>
                 </div>

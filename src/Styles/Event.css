@@ -119,3 +119,8 @@
   background-color: #fafafa;
   cursor: pointer;
 }
+
+.dashDropdownArrow {
+  transform: translateX(-15px);
+  font-size: 22px;
+}

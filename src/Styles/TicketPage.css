@@ -7,7 +7,7 @@
 
 .map {
   height: 100%;
-  width: 780px;
+  width: 774px;
   background-color: #f0f0f0;
 }
 
@@ -162,4 +162,59 @@
 .tickLocation p {
   transform: translateY(8px);
   font-size: 14px;
+}
+
+.ticketSelectionContainer {
+  position: absolute;
+  width: 765px;
+  height: 734px;
+  left: 0;
+  top: 196px;
+
+  background: #ffffff;
+  /* light grey */
+
+  border-left: 1px solid #dee0e2;
+  box-sizing: border-box;
+}
+
+.ticketDropdown {
+  display: flex;
+  flex-direction: row;
+
+  align-items: center;
+  padding: 8px 15px 8px 16px;
+
+  position: absolute;
+  width: 300px;
+  height: 36px;
+  left: 24px;
+  top: 24px;
+
+  text-align: start;
+  padding-left: 15px;
+
+  /* white */
+
+  background: #ffffff;
+  /* light grey */
+
+  border: 1px solid #dee0e2;
+  border-radius: 4px;
+}
+
+hr {
+  position: absolute;
+  width: 765px;
+  height: 0px;
+  left: 0px;
+  top: 84px;
+  background-color: #ffffff;
+  border-top: #dee0e2;
+}
+
+.ticketContainer {
+  width: 765px;
+  height: 100%;
+  transform: translateY(95px);
 }

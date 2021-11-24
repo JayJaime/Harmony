@@ -5,7 +5,13 @@ import Event from '../Components/Event'
 import Goer from '../Components/Goer'
 import DashButton from '../Components/DashButton'
 
+
 import {useEffect, useState} from 'react'
+
+// let dropDown = document.querySelector('.eventInfo')
+// dropDown.addEventListener('click', () => {
+//     document.querySelector('.dropDownMenu').style.opacity = '1'
+// })
 
 let zip = '00000';
 let concertCount = '0'
@@ -83,11 +89,19 @@ export default function Dashboard() {
                         <select></select>
                     </div>
                 </div>
-                {placeholderAPI.map((event) => {
-                    console.log(event)
-                    return <Event artistPhoto = {event.artist_photo} month = {event.date.month} day = {event.date.day} weekDay = {event.date.weekDay} 
-                    time = {event.date.time} name = {event.artist_name} venue = {event.location.venue} city = {event.location.city} state = {event.location.state} />
-                })}
+               
+                    {placeholderAPI.map((event) => {
+                        console.log(event)
+                        return <div className='dashDropdown'>
+                                    <Event artistPhoto = {event.artist_photo} month = {event.date.month} day = {event.date.day} weekDay = {event.date.weekDay} 
+                                     time = {event.date.time} name = {event.artist_name} venue = {event.location.venue} city = {event.location.city} state = {event.location.state} />
+                                    <div className='dashDropdownMenu'>
+                                         Dropdown content
+                                    </div>
+                                </div>
+                        
+                    })}
+               
 
                 <div className='goersContainer'>
                     <h3 className='title'>Concert goers near you</h3>

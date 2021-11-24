@@ -1,1 +1,27 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap");
+
+.ticket {
+  /* transform: translateY(100px); */
+  font-family: "Montserrat";
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4px 0px;
+  padding-left: 24px;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+  width: 614px;
+  /* height: 65px; */
+
+  background: #ffffff;
+}
+
+.ticketPrice {
+  font-size: 20px;
+  color: #2d9cdb;
+}
+
+.ticketSeat {
+  font-size: 20px;
+}
