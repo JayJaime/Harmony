@@ -1,0 +1,17 @@
+.Lineup {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.lineupArtistPhoto {
+  width: 32px;
+  height: 32px;
+  border: 1px solid black;
+  border-radius: 50%;
+}
+
+.lineupArtistName {
+  transform: translateX(10px);
+}

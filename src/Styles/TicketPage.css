@@ -10,6 +10,9 @@
   width: 774px;
   background-color: #f0f0f0;
 }
+.container {
+  z-index: -1;
+}
 
 .ticketContentContainer {
   position: absolute;
@@ -170,11 +173,11 @@
   height: 734px;
   left: 0;
   top: 196px;
+  z-index: 1;
 
   background: #ffffff;
   /* light grey */
 
-  border-left: 1px solid #dee0e2;
   box-sizing: border-box;
 }
 
@@ -185,22 +188,27 @@
   align-items: center;
   padding: 8px 15px 8px 16px;
 
-  position: absolute;
+  position: relative;
   width: 300px;
   height: 36px;
   left: 24px;
   top: 24px;
+  cursor: pointer;
 
   text-align: start;
   padding-left: 15px;
 
   /* white */
-
+  z-index: 2;
   background: #ffffff;
   /* light grey */
 
   border: 1px solid #dee0e2;
   border-radius: 4px;
+}
+
+.ticketDropdown:hover {
+  border-color: #1db954;
 }
 
 hr {
@@ -215,6 +223,63 @@ hr {
 
 .ticketContainer {
   width: 765px;
-  height: 100%;
-  transform: translateY(95px);
+  display: flex;
+  flex-direction: column;
+  transform: translateY(60px);
+  border-left: 1px solid #dee0e2;
+}
+
+.scroll {
+  overflow: hidden;
+  overflow-y: scroll;
+  padding-bottom: 50px;
+}
+
+.dropdownTicks {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 0px;
+
+  position: absolute;
+  width: 300px;
+  /* height: 360px; */
+  left: 24px;
+  top: 65px;
+  z-index: 999;
+
+  background: #ffffff;
+  /* light grey */
+  opacity: 0;
+  border: 1px solid #dee0e2;
+  /* light-shadow */
+
+  box-shadow: 0px 4px 32px rgba(60, 69, 76, 0.12);
+  border-radius: 4px;
+}
+
+.dropdownTicksActive {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 0px;
+
+  position: absolute;
+  width: 300px;
+  /* height: 360px; */
+  left: 24px;
+  top: 65px;
+  z-index: 999;
+
+  background: #ffffff;
+  /* light grey */
+  /* opacity: 1; */
+  border: 1px solid #dee0e2;
+  /* light-shadow */
+
+  box-shadow: 0px 4px 32px rgba(60, 69, 76, 0.12);
+  border-radius: 4px;
+  padding-left: 15px;
 }

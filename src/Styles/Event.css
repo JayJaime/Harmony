@@ -4,22 +4,29 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 782px;
+  width: 860px;
   min-height: 60px;
+  transform: translateX(-15px);
 
   /* border: 1px solid black; */
   box-sizing: border-box;
   /* margin-bottom: 20px; */
 }
 
+.eventButton {
+  transform: translate(20px, 20px);
+}
+
 .date {
   display: flex;
   flex-direction: column;
+  pointer-events: none;
 }
 
 .nameAndLocation {
   display: flex;
   flex-direction: column;
+  pointer-events: none;
 }
 
 .artistPhoto {
@@ -27,6 +34,13 @@
   height: 60px;
   border-radius: 50%;
   border: 1px solid black;
+  pointer-events: none;
+}
+
+.over {
+  display: flex;
+  flex-direction: row;
+  transform: translateX(-25px);
 }
 
 .month {
@@ -35,6 +49,7 @@
   font-weight: 600;
   font-size: 16px;
   line-height: 20px;
+  pointer-events: none;
   /* identical to box height */
 
   /* text-align: center; */
@@ -53,6 +68,7 @@
   font-size: 14px;
   line-height: 17px;
   padding-top: 7px;
+  pointer-events: none;
   /* identical to box height */
 
   text-align: center;
@@ -76,6 +92,7 @@
 
   /* text-align: center; */
   letter-spacing: 0.02em;
+  pointer-events: none;
 
   /* txt-color */
 
@@ -91,7 +108,7 @@
   /* identical to box height */
 
   transform: translateX(135px);
-
+  pointer-events: none;
   text-align: center;
   letter-spacing: 0.02em;
 
@@ -105,14 +122,25 @@
 
 .eventInfo {
   /* height: 100px; */
-  width: 655px;
+  width: 680px;
   display: flex;
   padding: 0 30px;
-
   align-items: center;
   min-height: 80px;
   /* border: 1px solid black; */
   box-sizing: border-box;
+}
+
+.eventInfoActive {
+  width: 680px;
+  display: flex;
+  padding: 0 30px;
+  align-items: center;
+  min-height: 80px;
+  cursor: pointer;
+  /* border: 1px solid black; */
+  box-sizing: border-box;
+  background-color: #fafafa;
 }
 
 .eventInfo:hover {
@@ -121,6 +149,79 @@
 }
 
 .dashDropdownArrow {
-  transform: translateX(-15px);
+  transform: translate(-10px, 15px);
   font-size: 22px;
+  width: 50px;
+  height: 50px;
+
+  pointer-events: none;
+}
+
+/* .dashDropdownArrow:hover {
+  cursor: pointer;
+} */
+/* .mainDropdownCont {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+} */
+/* 
+.dashDropdown {
+  width: 100%;
+  position: relative;
+} */
+
+.dashDropdownMenu {
+  /* position: absolute; */
+  width: 100%;
+  /* left: 0; */
+  /* top: calc(100% + 0.25rem); */
+  background-color: white;
+  /* padding: 0.75rem; */
+  /* border-radius: 0.25rem; */
+  /* box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1); */
+  /* z-index: 1;
+  opacity: 1; */
+  /* pointer-events: none; */
+  /* transform: translateY(-10px); */
+  /* transition: opacity 150ms ease-in-out, transform 150ms ease-in-out; */
+  /* border: 1px solid black; */
+}
+/* 
+.dashDropdownMenu:hover {
+  opacity: 1;
+  transform: translateY(0px);
+  pointer-events: auto;
+} */
+
+.mainDropdownContActive {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid rgb(204, 203, 203);
+  box-shadow: 0px 5px 15px 0px rgba(65, 64, 64, 0.5);
+  width: 100%;
+  border-radius: 5px;
+}
+
+.eventInfoFlex {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
+.lineupContainer {
+  position: absolute;
+  opacity: 0;
+}
+
+.lineupPosition {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding-left: 60px;
+}
+
+.lineupPosition p {
+  margin-bottom: 15px;
 }

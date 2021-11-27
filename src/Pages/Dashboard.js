@@ -4,6 +4,7 @@ import Header from '../Components/Header'
 import Event from '../Components/Event'
 import Goer from '../Components/Goer'
 import DashButton from '../Components/DashButton'
+import Footer from '../Components/Footer'
 
 
 import {useEffect, useState} from 'react'
@@ -36,7 +37,39 @@ let placeholderAPI = [
      {artist_photo:'', 
      date: {month:'Nov', day:'12', weekDay:'Friday', time:'8:00 PM'},
      artist_name:'Kendrick Lamar',
+     location:{venue:'Sunshine Theatre', state:'NM', city:'Albuquerue'} },{artist_photo:'', 
+     date: {month:'Nov', day:'12', weekDay:'Friday', time:'8:00 PM'},
+     artist_name:'Isaiah Rashad',
+     location:{venue:'Sunshine Theatre', state:'NM', city:'Albuquerue'} },
+
+     {artist_photo:'', 
+     date: {month:'Nov', day:'12', weekDay:'Friday', time:'8:00 PM'},
+     artist_name:'JID',
+     location:{venue:'Sunshine Theatre', state:'NM', city:'Albuquerue'} },
+
+     {artist_photo:'', 
+     date: {month:'Nov', day:'12', weekDay:'Friday', time:'8:00 PM'},
+     artist_name:'The Fixx',
+     location:{venue:'Sunshine Theatre', state:'NM', city:'Albuquerue'} },
+
+     {artist_photo:'', 
+     date: {month:'Nov', day:'12', weekDay:'Friday', time:'8:00 PM'},
+     artist_name:'Kendrick Lamar',
+     location:{venue:'Sunshine Theatre', state:'NM', city:'Albuquerue'} },
+     {artist_photo:'', 
+     date: {month:'Nov', day:'12', weekDay:'Friday', time:'8:00 PM'},
+     artist_name:'Kendrick Lamar',
+     location:{venue:'Sunshine Theatre', state:'NM', city:'Albuquerue'} },
+     {artist_photo:'', 
+     date: {month:'Nov', day:'12', weekDay:'Friday', time:'8:00 PM'},
+     artist_name:'Kendrick Lamar',
+     location:{venue:'Sunshine Theatre', state:'NM', city:'Albuquerue'} },
+     {artist_photo:'', 
+     date: {month:'Nov', day:'12', weekDay:'Friday', time:'8:00 PM'},
+     artist_name:'Kendrick Lamar',
      location:{venue:'Sunshine Theatre', state:'NM', city:'Albuquerue'} }
+     
+
 ]
 
 let placeHolderAPI2 = [
@@ -71,8 +104,13 @@ export default function Dashboard() {
     }, [])
     
     return (
+        
         <div className='dashContainer'>
             <Header class = {className}/>
+            <div className='dcContainer'>
+            
+            <div className="containerOfContainer">
+            
             <div className='topArtist'>
                 <div className='topArtistContent'>
                     <h3 className='date'>{placeholderAPI[0].date.weekDay + ' ' + placeholderAPI[0].date.month + ' ' + placeholderAPI[0].date.day}</h3>
@@ -81,37 +119,38 @@ export default function Dashboard() {
                     <DashButton id='topButton'/>
                 </div>
             </div>
-            <div className='concertContainer'>
-                <div className='concertCount'>
-                    <h3>All Concert Events Near <span className='zip'>{zip}</span> {`(${concertCount})`}</h3>
-                    <div className='dropdown'>
-                        <label>Sort by: Date</label>
-                        <select></select>
+                  <div className='concertContainer'>
+                    <div className='concertCount'>
+                        <h3>All Concert Events Near <span className='zip'>{zip}</span> {`(${concertCount})`}</h3>
+                        <div className='dropdown'>
+                            <label>Sort by: Date</label>
+                            <select></select>
+                        </div>
                     </div>
-                </div>
-               
-                    {placeholderAPI.map((event) => {
-                        console.log(event)
-                        return <div className='dashDropdown'>
-                                    <Event artistPhoto = {event.artist_photo} month = {event.date.month} day = {event.date.day} weekDay = {event.date.weekDay} 
+                   
+                        {placeholderAPI.map((event) => {
+                            console.log(event)
+                            return   <Event artistPhoto = {event.artist_photo} month = {event.date.month} day = {event.date.day} weekDay = {event.date.weekDay} 
                                      time = {event.date.time} name = {event.artist_name} venue = {event.location.venue} city = {event.location.city} state = {event.location.state} />
-                                    <div className='dashDropdownMenu'>
-                                         Dropdown content
-                                    </div>
-                                </div>
-                        
-                    })}
-               
-
+                                        
+                                        
+                                    
+                            
+                        })}
+                   
+                    </div>
+              
                 <div className='goersContainer'>
                     <h3 className='title'>Concert goers near you</h3>
                     {placeHolderAPI2.map((event) => {
                         return <Goer photo = {event.goer_photo} nameGoer = {event.name} seeing = {event.seeing}/>
                     })}
                 </div>
-                
             </div>
-            
+            <Footer/>
+        </div> 
         </div>
+        
+        
     )
 }

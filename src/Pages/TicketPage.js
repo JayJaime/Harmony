@@ -1,9 +1,14 @@
 import React from 'react'
-import Header from '../Components/Header'
+import Header2 from '../Components/Header2'
 import '../Styles/TicketPage.css'
 import Ticket from '../Components/Ticket'
+import Tickets from '../Components/Tickets'
 
 export default function TicketPage() {
+
+    document.body.classList.add('overflow-x')
+    document.body.classList.remove('overflow-y')
+
     let ticketPlaceholder = [
         {seat:{section:'Terrace', seat:'20A', row:'9'},
          price: '$125.00'
@@ -28,12 +33,37 @@ price: '$125.00'
 },
 {seat:{section:'Terrace', seat:'20A', row:'9'},
 price: '$125.00'
+},
+{seat:{section:'Terrace', seat:'20A', row:'9'},
+price: '$125.00'
+},
+{seat:{section:'Terrace', seat:'20A', row:'9'},
+price: '$125.00'
+},
+{seat:{section:'Terrace', seat:'20A', row:'9'},
+price: '$125.00'
+},
+{seat:{section:'Terrace', seat:'20A', row:'9'},
+price: '$125.00'
+},
+{seat:{section:'Terrace', seat:'20A', row:'9'},
+price: '$125.00'
+},
+{seat:{section:'Terrace', seat:'20A', row:'9'},
+price: '$125.00'
 }
     ]
 
+   function tickDrop() {
+      let drop =  document.querySelector('.dropdownTicks')
+      drop.classList.add('dropdownTicksActive')
+      drop.classList.remove('dropdownTicks')
+       console.log(drop)
+   } 
+
     return (
         <div className='ticketPageContainer'>
-            <Header id = 'hide'/>
+            <Header2 />
             <div className='map'>
                 Stadium Map
             </div>
@@ -54,18 +84,33 @@ price: '$125.00'
                 </div>
                 
                 <div className='ticketSelectionContainer'>
-                    <div className='ticketDropdown'>
+                    <div onClick = {tickDrop}className='ticketDropdown'>
                         1 Ticket
                     </div>
-                    <hr/>
-                    <div className='ticketContainer'>
-                       
-                            {ticketPlaceholder.map((ticket) => {
-                                return <Ticket price = {ticket.price} section = {ticket.seat.section} row = {ticket.seat.row} seat = {ticket.seat.seat}/>
-                            })}
-                            
-            
+                    <div className='dropdownTicks'>
+                        <Tickets/>
+                        <Tickets/>
+                        <Tickets/>
+                        <Tickets/>
+                        <Tickets/>
+                        <Tickets/>
+                        <Tickets/>
+                        <Tickets/>
+                        <Tickets/>
+                        <Tickets/>
+                        <Tickets/>
                     </div>
+                    <hr/>
+                   
+                            <div className='ticketContainer' >
+                               
+                                    {ticketPlaceholder.map((ticket) => {
+                                        return <Ticket price = {ticket.price} section = {ticket.seat.section} row = {ticket.seat.row} seat = {ticket.seat.seat}/>
+                                    })}
+                                    
+                    
+                            </div>
+                     
                 </div>
             </div>
             
