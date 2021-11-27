@@ -9,6 +9,7 @@
   height: 100%;
   width: 774px;
   background-color: #f0f0f0;
+  position: fixed;
 }
 .container {
   z-index: -1;
