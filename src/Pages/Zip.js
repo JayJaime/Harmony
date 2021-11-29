@@ -3,7 +3,7 @@ import Header from '../Components/Header'
 import '../Styles/Zip.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {useEffect, useState} from 'react'
-import DashButton from '../Components/DashButton'
+
 
 function dash() {
     window.open('Dashboard', '_self')

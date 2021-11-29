@@ -2,7 +2,15 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  margin-top: 10px;
+
+  margin-left: 55px;
+  width: 200px;
+  height: 50px;
+}
+
+.Lineup:hover {
+  cursor: pointer;
+  background-color: #fafafa;
 }
 
 .lineupArtistPhoto {
@@ -10,8 +18,9 @@
   height: 32px;
   border: 1px solid black;
   border-radius: 50%;
+  transform: translateX(5px);
 }
 
 .lineupArtistName {
-  transform: translateX(10px);
+  transform: translateX(15px);
 }

@@ -93,13 +93,13 @@
   height: 18px;
   left: 1259px;
   top: 25px;
+  transform: translateX(1px);
 
   opacity: 0.8;
 }
 
 .cart:hover {
   cursor: pointer;
-  color: rgb(219, 214, 214);
 }
 
 #hide {

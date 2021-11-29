@@ -1,7 +1,7 @@
 import React from 'react'
 import '../Styles/Event.css'
 import DashButton from './DashButton'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+ import { AiOutlineDown } from "react-icons/ai";
 import Lineup from './Lineup'
 import {useState} from 'react'
 
@@ -27,7 +27,7 @@ export default function Event(props) {
                     <div className='mainDropdownCont'>
                        <div className='eventInfoFlex'>
                             <div  className='eventInfo'>
-                            <div className='dashDropdownArrow'><FontAwesomeIcon  icon={['fas', 'angle-down']}/></div>
+                            <div className='dashDropdownArrow'><AiOutlineDown /></div>
                                 <div className='over'>
                                     <div className='artistPhoto'>
                                          

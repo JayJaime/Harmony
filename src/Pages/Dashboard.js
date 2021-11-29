@@ -69,7 +69,52 @@ let placeholderAPI = [
      {artist_photo:'', 
      date: {month:'Nov', day:'12', weekDay:'Friday', time:'8:00 PM'},
      artist_name:'Kendrick Lamar',
-     location:{venue:'Sunshine Theatre', state:'NM', city:'Albuquerue'} }
+     location:{venue:'Sunshine Theatre', state:'NM', city:'Albuquerue'} },
+
+     {artist_photo:'', 
+     date: {month:'Nov', day:'12', weekDay:'Friday', time:'8:00 PM'},
+     artist_name:'The Fixx',
+     location:{venue:'Sunshine Theatre', state:'NM', city:'Albuquerue'} },
+     {artist_photo:'', 
+     date: {month:'Nov', day:'12', weekDay:'Friday', time:'8:00 PM'},
+     artist_name:'The Fixx',
+     location:{venue:'Sunshine Theatre', state:'NM', city:'Albuquerue'} },
+     {artist_photo:'', 
+     date: {month:'Nov', day:'12', weekDay:'Friday', time:'8:00 PM'},
+     artist_name:'The Fixx',
+     location:{venue:'Sunshine Theatre', state:'NM', city:'Albuquerue'} },
+     {artist_photo:'', 
+     date: {month:'Nov', day:'12', weekDay:'Friday', time:'8:00 PM'},
+     artist_name:'The Fixx',
+     location:{venue:'Sunshine Theatre', state:'NM', city:'Albuquerue'} },
+     {artist_photo:'', 
+     date: {month:'Nov', day:'12', weekDay:'Friday', time:'8:00 PM'},
+     artist_name:'The Fixx',
+     location:{venue:'Sunshine Theatre', state:'NM', city:'Albuquerue'} },
+     {artist_photo:'', 
+     date: {month:'Nov', day:'12', weekDay:'Friday', time:'8:00 PM'},
+     artist_name:'The Fixx',
+     location:{venue:'Sunshine Theatre', state:'NM', city:'Albuquerue'} },
+     {artist_photo:'', 
+     date: {month:'Nov', day:'12', weekDay:'Friday', time:'8:00 PM'},
+     artist_name:'The Fixx',
+     location:{venue:'Sunshine Theatre', state:'NM', city:'Albuquerue'} },
+     {artist_photo:'', 
+     date: {month:'Nov', day:'12', weekDay:'Friday', time:'8:00 PM'},
+     artist_name:'The Fixx',
+     location:{venue:'Sunshine Theatre', state:'NM', city:'Albuquerue'} },
+     {artist_photo:'', 
+     date: {month:'Nov', day:'12', weekDay:'Friday', time:'8:00 PM'},
+     artist_name:'The Fixx',
+     location:{venue:'Sunshine Theatre', state:'NM', city:'Albuquerue'} },
+     {artist_photo:'', 
+     date: {month:'Nov', day:'12', weekDay:'Friday', time:'8:00 PM'},
+     artist_name:'The Fixx',
+     location:{venue:'Sunshine Theatre', state:'NM', city:'Albuquerue'} },
+     {artist_photo:'', 
+     date: {month:'Nov', day:'12', weekDay:'Friday', time:'8:00 PM'},
+     artist_name:'The Fixx',
+     location:{venue:'Sunshine Theatre', state:'NM', city:'Albuquerue'} },
      
 
 ]
@@ -107,7 +152,8 @@ export default function Dashboard() {
 
     let lineup = document.querySelectorAll('.eventInfo')
     let lineupArr = Array.from(lineup)
-    const [boolean, setBoolean] = useState('false')
+    const [boolean, setBoolean] = useState(false)
+    console.log(lineupArr)
     
     
 
@@ -115,8 +161,10 @@ export default function Dashboard() {
      lineupArr[i].addEventListener('click', (e) => {
         let mainDropdown = e.target.parentElement
         let lineUpCont = e.target.parentElement.parentElement.children[1]
+        let arrow = e.target.children[0].children[0]
         // let booleanVar = boolean
-        // console.log(e.target)
+        console.log(e.target.children)
+        console.log(e.target)
         
          if(mainDropdown.parentElement.classList.value === 'mainDropdownCont'){ 
             //  console.log(e.target) 
@@ -126,11 +174,12 @@ export default function Dashboard() {
          lineUpCont.classList.remove('lineupContainer')
          e.target.classList.add('eventInfoActive')
          e.target.classList.remove('eventInfo')
-         setBoolean('')
+         arrow.classList.add('arrowActive')
+         setBoolean(true)
          console.log(e.target)
          
         }
-
+        // mainDropdown.parentElement.classList.value === 'mainDropdownContActive'
         if (mainDropdown.parentElement.classList.value === 'mainDropdownContActive'){
             console.log('hello')
          lineupArr[i].addEventListener('click', (e) => {
@@ -139,6 +188,8 @@ export default function Dashboard() {
             lineUpCont.classList.add('lineupContainer')
             e.target.classList.remove('eventInfoActive')
             e.target.classList.add('eventInfo')
+            console.log(e.target)
+            arrow.classList.remove('arrowActive')
             
          })}
 

@@ -6,13 +6,10 @@ import Dashboard from "./Pages/Dashboard";
 import PaymentPage from "./Pages/PaymentPage";
 import TicketPage from "./Pages/TicketPage";
 // import ReactDOM from 'react-dom'
-import { library } from '@fortawesome/fontawesome-svg-core'
-import { fab} from '@fortawesome/free-brands-svg-icons'
-import { fas } from '@fortawesome/free-solid-svg-icons'
 import Zip from './Pages/Zip'
 
 
-library.add(fab, fas)
+
 
 function App() {
   return <div className="App">

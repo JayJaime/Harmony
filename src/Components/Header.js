@@ -1,6 +1,7 @@
 import React from 'react'
 import '../Styles/Header.css'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { AiOutlineShoppingCart } from "react-icons/ai";
+import { BsSearch } from "react-icons/bs";
 
 
 export default function Header(props) {
@@ -16,8 +17,8 @@ export default function Header(props) {
     return (
         <div className='header'>
                 <div className={props.class}>
-                    <div id={props.id} className='input' > <FontAwesomeIcon className="search" icon={['fas', 'search']} /><input type='text' placeholder='City or Zip Code' ></input></div>
-                    <FontAwesomeIcon onClick={checkout} className="cart" icon={['fas', 'cart-arrow-down']} />
+                    <div id={props.id} className='input' > <BsSearch className="search"  /><input type='text' placeholder='City or Zip Code' ></input></div>
+                    <AiOutlineShoppingCart onClick={checkout} className='cart'  />
                     <p  onClick={logout}>Logout</p>
                 </div>
          </div>

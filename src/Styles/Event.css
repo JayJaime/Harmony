@@ -21,11 +21,13 @@
   display: flex;
   flex-direction: column;
   pointer-events: none;
+  transform: translateY(10px);
 }
 
 .nameAndLocation {
   display: flex;
   flex-direction: column;
+  transform: translateY(10px);
   pointer-events: none;
 }
 
@@ -40,7 +42,8 @@
 .over {
   display: flex;
   flex-direction: row;
-  transform: translateX(-25px);
+  pointer-events: none;
+  transform: translateX(5px);
 }
 
 .month {
@@ -87,7 +90,7 @@
   font-weight: 600;
   font-size: 16px;
   line-height: 20px;
-  transform: translateX(135px);
+  transform: translate(135px);
   /* identical to box height */
 
   /* text-align: center; */
@@ -149,11 +152,6 @@
 }
 
 .dashDropdownArrow {
-  transform: translate(-10px, 15px);
-  font-size: 22px;
-  width: 50px;
-  height: 50px;
-
   pointer-events: none;
 }
 
@@ -178,6 +176,7 @@
   /* left: 0; */
   /* top: calc(100% + 0.25rem); */
   background-color: white;
+
   /* padding: 0.75rem; */
   /* border-radius: 0.25rem; */
   /* box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1); */
@@ -219,9 +218,20 @@
 .lineupPosition {
   margin-top: 20px;
   margin-bottom: 20px;
-  padding-left: 60px;
 }
 
 .lineupPosition p {
   margin-bottom: 15px;
+  transform: translateX(60px);
+}
+
+svg {
+  transform: translateX(-13px);
+  pointer-events: none;
+  font-size: 20px;
+}
+
+.arrowActive {
+  transform: translateX(-13px) rotate(180deg);
+  pointer-events: none;
 }
