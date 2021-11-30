@@ -68,39 +68,41 @@ price: '$125.00'
                 Stadium Map
             </div>
             <div className='ticketContentContainer'>
-                <div className='artistTicketPage'>
-                    <div className='tickArtistContent'>
-                        <div className='tickArtistDateLocation'>
-                            <div className='tickLocation'>
-                                <h3>Kendrick Lamar</h3>
-                                <p>Sunshine Theatre, Albuquerque, NM</p>
+                <div className='tickFixed'>
+                    <div className='artistTicketPage'>
+                        <div className='tickArtistContent'>
+                            <div className='tickArtistDateLocation'>
+                                <div className='tickLocation'>
+                                    <h3>Kendrick Lamar</h3>
+                                    <p>Sunshine Theatre, Albuquerque, NM</p>
+                                </div>
+                                <div className='tickDate'>
+                                    <p>Friday ⋅ Nov 12, 2022 ⋅ 8:00PM</p>
+                                </div>
                             </div>
-                            <div className='tickDate'>
-                                <p>Friday ⋅ Nov 12, 2022 ⋅ 8:00PM</p>
-                            </div>
+                            <div className='tickArtistPhoto'></div>
                         </div>
-                        <div className='tickArtistPhoto'></div>
                     </div>
+                   <div className ='dropdownContTick'>
+                        <div onClick = {tickDrop}className='ticketDropdown'>
+                                1 Ticket
+                            </div>
+                            <div className='dropdownTicks'>
+                                <Tickets/>
+                                <Tickets/>
+                                <Tickets/>
+                                <Tickets/>
+                                <Tickets/>
+                                <Tickets/>
+                                <Tickets/>
+                                <Tickets/>
+                                <Tickets/>
+                                <Tickets/>
+                                <Tickets/>
+                            </div>
+                   </div>
                 </div>
-                
                 <div className='ticketSelectionContainer'>
-                    <div onClick = {tickDrop}className='ticketDropdown'>
-                        1 Ticket
-                    </div>
-                    <div className='dropdownTicks'>
-                        <Tickets/>
-                        <Tickets/>
-                        <Tickets/>
-                        <Tickets/>
-                        <Tickets/>
-                        <Tickets/>
-                        <Tickets/>
-                        <Tickets/>
-                        <Tickets/>
-                        <Tickets/>
-                        <Tickets/>
-                    </div>
-                    <hr/>
                    
                             <div className='ticketContainer' >
                                

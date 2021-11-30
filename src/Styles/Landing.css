@@ -93,7 +93,7 @@
   border-radius: 30px;
 }
 
-.container button:hover {
+.imageContainer button:hover {
   background-color: #1db954;
   color: #000000;
   cursor: pointer;

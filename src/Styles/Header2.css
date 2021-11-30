@@ -87,22 +87,6 @@
   margin-right: 10px;
 }
 
-.cart {
-  color: white;
-  position: absolute;
-  width: 20px;
-  height: 18px;
-  left: 1259px;
-  top: 25px;
-
-  opacity: 0.8;
-}
-
-.cart:hover {
-  cursor: pointer;
-  color: rgb(219, 214, 214);
-}
-
 #hide {
   display: hidden;
 }
@@ -128,4 +112,25 @@
   color: #ffffff;
 
   opacity: 0.8;
+}
+
+#move:hover {
+  cursor: pointer;
+  color: rgb(219, 214, 214);
+}
+
+.cart2 {
+  color: white;
+  position: absolute;
+  width: 20px;
+  height: 18px;
+  left: 1259px;
+  top: 25px;
+
+  opacity: 0.8;
+}
+
+.cart2:hover {
+  cursor: pointer;
+  color: rgb(219, 214, 214);
 }

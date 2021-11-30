@@ -23,6 +23,7 @@
   top: 0px;
 
   background: #ffffff;
+
   /* light grey */
 
   /* border: 1px solid #dee0e2; */
@@ -193,7 +194,7 @@
   width: 300px;
   height: 36px;
   left: 24px;
-  top: 24px;
+  top: 0px;
   cursor: pointer;
 
   text-align: start;
@@ -212,21 +213,11 @@
   border-color: #1db954;
 }
 
-hr {
-  position: absolute;
-  width: 765px;
-  height: 0px;
-  left: 0px;
-  top: 84px;
-  background-color: #ffffff;
-  border-top: #dee0e2;
-}
-
 .ticketContainer {
   width: 765px;
   display: flex;
   flex-direction: column;
-  transform: translateY(60px);
+  transform: translateY(100px);
   border-left: 1px solid #dee0e2;
 }
 
@@ -247,7 +238,7 @@ hr {
   width: 300px;
   /* height: 360px; */
   left: 24px;
-  top: 65px;
+  top: 255px;
   z-index: 999;
 
   background: #ffffff;
@@ -288,4 +279,19 @@ hr {
 
 .dropdownTicksActive p {
   margin-top: 10px;
+}
+
+.tickFixed {
+  position: fixed;
+  z-index: 2;
+}
+
+.dropdownContTick {
+  background-color: white;
+  border-bottom: 1px solid #f0f0f0;
+  display: flex;
+  align-items: center;
+  height: 90px;
+  width: 300%;
+  transform: translateY(195px);
 }
