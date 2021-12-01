@@ -33,11 +33,11 @@
 
 .topArtist {
   position: absolute;
-  width: 100%;
+  width: 80%;
   height: 447px;
-  left: 0px;
-  top: 0px;
-  transform: translateX(-120px);
+  left: 10px;
+  top: 110px;
+  border-radius: 20px;
 
   background: linear-gradient(180deg, rgba(0, 0, 0, 0.4) 0%, #000000 100%);
 }
@@ -130,7 +130,8 @@
   position: relative;
   width: 782px;
   height: 100%;
-  top: 508px;
+  left: 5px;
+  top: 618px;
 
   display: flex;
   flex-direction: column;
@@ -164,8 +165,8 @@
   position: relative;
   width: 782px;
   height: 100%;
-  left: 215px;
-  top: 508px;
+  left: 205px;
+  top: 618px;
   display: flex;
   flex-direction: column;
   justify-content: stretch;

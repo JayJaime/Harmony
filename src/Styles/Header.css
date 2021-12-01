@@ -10,6 +10,10 @@
   background: #000000;
 }
 
+.header p {
+  pointer-events: all;
+}
+
 /* .searchAndFilter {
 } */
 

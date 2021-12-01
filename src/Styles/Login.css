@@ -127,9 +127,10 @@
   top: calc(603px - 160px);
   font-family: "Montserrat", sans-serif;
   font-weight: bold;
-  font-size: 1em;
+  font-size: 16px;
   letter-spacing: 1px;
   cursor: pointer;
+  color: black;
 
   background: #1db954;
   /* light-shadow */

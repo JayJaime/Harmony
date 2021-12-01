@@ -25,6 +25,7 @@ let placeholderAPI = [
      date: {month:'Nov', day:'12', weekDay:'Friday', time:'8:00 PM'},
      artist_name:'Isaiah Rashad',
      location:{venue:'Sunshine Theatre', state:'NM', city:'Albuquerue'} },
+     
 
      {artist_photo:'', 
      date: {month:'Nov', day:'12', weekDay:'Friday', time:'8:00 PM'},
