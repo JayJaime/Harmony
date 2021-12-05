@@ -155,6 +155,26 @@ const LandingButt = styled.button`
 		background-color: #1db954;
 		color: #000000;
 		cursor: pointer;
+
+		& a{
+		color:  #000000;
+		
+
+		& svg{
+			color:#000000;
+		}
+	}
+	}
+
+	& a{
+		text-decoration: none;
+		font-size: 18px;
+		color:  #1db954;
+		transform: translateY(-3px);
+
+		& svg{
+			transform: translate(2px, 4px);
+		}
 	}
 `;
 const SpotifyIcon = styled(BsSpotify)`

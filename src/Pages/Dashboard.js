@@ -159,7 +159,7 @@ export default function Dashboard() {
     
 
     for (let i = 0; i < lineupArr.length; i++ ){
-     lineupArr[i].addEventListener('click', (e) => {
+     lineupArr[i].addEventListener('mouseover', (e) => {
         let mainDropdown = e.target.parentElement
         let lineUpCont = e.target.parentElement.parentElement.children[1]
         let arrow = e.target.children[0].children[0]
@@ -183,7 +183,7 @@ export default function Dashboard() {
         // mainDropdown.parentElement.classList.value === 'mainDropdownContActive'
         if (mainDropdown.parentElement.classList.value === 'mainDropdownContActive'){
             console.log('hello')
-         lineupArr[i].addEventListener('click', (e) => {
+         lineupArr[i].parentElement.parentElement.addEventListener('mouseleave', (e) => {
             mainDropdown.parentElement.classList.remove('mainDropdownContActive')
             mainDropdown.parentElement.classList.add('mainDropdownCont')
             lineUpCont.classList.add('lineupContainer')
