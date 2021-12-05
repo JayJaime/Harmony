@@ -159,40 +159,44 @@ export default function Dashboard() {
     
 
     for (let i = 0; i < lineupArr.length; i++ ){
-     lineupArr[i].addEventListener('mouseover', (e) => {
+     lineupArr[i].addEventListener('click', (e) => {
         let mainDropdown = e.target.parentElement
         let lineUpCont = e.target.parentElement.parentElement.children[1]
         let arrow = e.target.children[0].children[0]
         // let booleanVar = boolean
         console.log(e.target.children)
         console.log(e.target)
+
+           //  console.log(e.target) 
+         
+           mainDropdown.parentElement.classList.add('mainDropdownContActive')
+           mainDropdown.parentElement.classList.remove('mainDropdownCont')
+           lineUpCont.classList.remove('lineupContainer')
+        //    e.target.classList.add('eventInfoActive')
+        //    e.target.classList.remove('eventInfo')
+           arrow.classList.add('arrowActive')
+           setBoolean(true)
+           console.log(e.target)
         
-         if(mainDropdown.parentElement.classList.value === 'mainDropdownCont'){ 
-            //  console.log(e.target) 
+        //  if(mainDropdown.parentElement.classList.value === 'mainDropdownCont'){ 
          
-         mainDropdown.parentElement.classList.add('mainDropdownContActive')
-         mainDropdown.parentElement.classList.remove('mainDropdownCont')
-         lineUpCont.classList.remove('lineupContainer')
-         e.target.classList.add('eventInfoActive')
-         e.target.classList.remove('eventInfo')
-         arrow.classList.add('arrowActive')
-         setBoolean(true)
-         console.log(e.target)
          
-        }
+        // }
         // mainDropdown.parentElement.classList.value === 'mainDropdownContActive'
-        if (mainDropdown.parentElement.classList.value === 'mainDropdownContActive'){
+        
             console.log('hello')
          lineupArr[i].parentElement.parentElement.addEventListener('mouseleave', (e) => {
+             
             mainDropdown.parentElement.classList.remove('mainDropdownContActive')
             mainDropdown.parentElement.classList.add('mainDropdownCont')
             lineUpCont.classList.add('lineupContainer')
             e.target.classList.remove('eventInfoActive')
-            e.target.classList.add('eventInfo')
+            // e.target.classList.add('eventInfo')
             console.log(e.target)
             arrow.classList.remove('arrowActive')
-            
-         })}
+            return
+            }
+         )
 
       })
     }

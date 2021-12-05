@@ -125,7 +125,7 @@
 
 .eventInfo {
   /* height: 100px; */
-  width: 200%;
+  width: 86.5%;
   display: flex;
   padding: 0 30px;
   align-items: center;
@@ -135,7 +135,7 @@
 }
 
 .eventInfoActive {
-  width: 200%;
+  width: 86.5%;
   display: flex;
   padding: 0 30px;
   align-items: center;
@@ -149,6 +149,7 @@
 .eventInfo:hover {
   background-color: #fafafa;
   cursor: pointer;
+  width: 86.5%;
 }
 
 .dashDropdownArrow {
