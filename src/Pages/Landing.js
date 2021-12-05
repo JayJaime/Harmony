@@ -92,10 +92,12 @@ const LandingButt = styled.button`
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  padding: 26px 10px;
+  padding: 16px 24px;
+
+  font-family: 'Montserrat';
 
   position: absolute;
-  width: 241px;
+  /* width: 241px; */
   height: 52px;
   left: 50%;
   transform: translateX(-50%);

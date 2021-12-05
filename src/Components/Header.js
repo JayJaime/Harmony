@@ -5,6 +5,7 @@ import { BsSearch } from "react-icons/bs";
 import styled from 'styled-components';
 
 
+
 export default function Header(props) {
     function logout(){
         window.open('Login', '_self')
@@ -17,6 +18,7 @@ export default function Header(props) {
 
     return (
         <div className='header'>
+               
                 <div className={props.class}>
                     <div id={props.id} className='input' > <BsSearch className="search"  /><input type='text' placeholder='City or Zip Code' ></input></div>
                     <Cart onClick={checkout}/>
@@ -42,3 +44,4 @@ color: white;
         color: rgb(219, 214, 214);
     }
 `
+

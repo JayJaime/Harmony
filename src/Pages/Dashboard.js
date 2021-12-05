@@ -236,12 +236,12 @@ export default function Dashboard() {
                    
                     </div>
               
-                <div className='goersContainer'>
+                {/* <div className='goersContainer'>
                     <h3 className='title'>Concert goers near you</h3>
                     {placeHolderAPI2.map((event) => {
                         return <Goer photo = {event.goer_photo} nameGoer = {event.name} seeing = {event.seeing}/>
                     })}
-                </div>
+                </div> */}
             </div>
             <Footer/>
         </div> 
