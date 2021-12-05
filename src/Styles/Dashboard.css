@@ -10,7 +10,7 @@
 .containerOfContainer {
   display: flex;
   flex-direction: row;
-
+  width: 82.5%;
   transform: translate(120px);
 }
 .dashContainer {
@@ -33,7 +33,7 @@
 
 .topArtist {
   position: absolute;
-  width: 80%;
+  width: 100%;
   height: 447px;
   left: 10px;
   top: 110px;
@@ -46,8 +46,8 @@
   position: absolute;
   width: 100%;
   height: 347px;
-  left: 120px;
-  top: 100px;
+  left: 60px;
+  bottom: 0px;
 }
 
 .topArtistContent .date {
@@ -128,7 +128,7 @@
 
 .concertContainer {
   position: relative;
-  width: 782px;
+  width: 100%;
   height: 100%;
   left: 5px;
   top: 618px;
